@@ -1,0 +1,7 @@
+-fmodule-file="trie=CMakeFiles/app.dir/trie.pcm"
+-fmodule-file="patricia=CMakeFiles/app.dir/patricia.pcm"
+-fmodule-file="treap=CMakeFiles/app.dir/treap.pcm"
+-fmodule-file="splay=CMakeFiles/app.dir/splay.pcm"
+-fmodule-file="kdtree=CMakeFiles/app.dir/kdtree.pcm"
+-fmodule-file="generator=CMakeFiles/app.dir/generator.pcm"
+-fmodule-file="benchmark=CMakeFiles/app.dir/benchmark.pcm"

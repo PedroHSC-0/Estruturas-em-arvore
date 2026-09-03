@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/src/arvores/kdtree.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "kdtree",
+          "source-path": "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/kdtree.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

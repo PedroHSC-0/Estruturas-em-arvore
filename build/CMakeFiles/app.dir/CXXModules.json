@@ -1,0 +1,79 @@
+{
+	"modules" : 
+	{
+		"benchmark" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/benchmark.pcm",
+			"is-private" : false
+		},
+		"generator" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/generator.pcm",
+			"is-private" : false
+		},
+		"kdtree" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/kdtree.pcm",
+			"is-private" : false
+		},
+		"patricia" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/patricia.pcm",
+			"is-private" : false
+		},
+		"splay" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/splay.pcm",
+			"is-private" : false
+		},
+		"treap" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/treap.pcm",
+			"is-private" : false
+		},
+		"trie" : 
+		{
+			"bmi" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir/trie.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"benchmark" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/benchmark.pcm"
+		},
+		"generator" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/generator.pcm"
+		},
+		"kdtree" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/kdtree.pcm"
+		},
+		"patricia" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/patricia.pcm"
+		},
+		"splay" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/splay.pcm"
+		},
+		"treap" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/treap.pcm"
+		},
+		"trie" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/app.dir/trie.pcm"
+		}
+	},
+	"usages" : {}
+}

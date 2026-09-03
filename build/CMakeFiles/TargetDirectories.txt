@@ -1,0 +1,3 @@
+/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir
+/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/edit_cache.dir
+/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/rebuild_cache.dir

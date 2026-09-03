@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/utils/benchmark.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "benchmark",
+          "source-path": "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/utils/benchmark.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

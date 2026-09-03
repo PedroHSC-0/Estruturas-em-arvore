@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/src/trie.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "trie",
+          "source-path": "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/trie.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

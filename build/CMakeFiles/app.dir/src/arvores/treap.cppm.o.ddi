@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/src/arvores/treap.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "treap",
+          "source-path": "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/treap.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

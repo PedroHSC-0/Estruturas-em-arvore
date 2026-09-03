@@ -1,0 +1,32 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/src/main.cpp.o",
+      "requires": [
+        {
+          "logical-name": "trie"
+        },
+        {
+          "logical-name": "patricia"
+        },
+        {
+          "logical-name": "treap"
+        },
+        {
+          "logical-name": "splay"
+        },
+        {
+          "logical-name": "kdtree"
+        },
+        {
+          "logical-name": "generator"
+        },
+        {
+          "logical-name": "benchmark"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

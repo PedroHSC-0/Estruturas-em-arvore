@@ -1,0 +1,24 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/app.dir/src/main.cpp.o: dyndep | CMakeFiles/app.dir/trie.pcm CMakeFiles/app.dir/patricia.pcm CMakeFiles/app.dir/treap.pcm CMakeFiles/app.dir/splay.pcm CMakeFiles/app.dir/kdtree.pcm CMakeFiles/app.dir/generator.pcm CMakeFiles/app.dir/benchmark.pcm
+
+build CMakeFiles/app.dir/src/arvores/trie.cppm.o | CMakeFiles/app.dir/trie.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/src/arvores/patricia.cppm.o | CMakeFiles/app.dir/patricia.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/src/arvores/treap.cppm.o | CMakeFiles/app.dir/treap.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/src/arvores/splay.cppm.o | CMakeFiles/app.dir/splay.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/src/arvores/kdtree.cppm.o | CMakeFiles/app.dir/kdtree.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/utils/generator.cppm.o | CMakeFiles/app.dir/generator.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/app.dir/utils/benchmark.cppm.o | CMakeFiles/app.dir/benchmark.pcm: dyndep
+  restat = 1
+

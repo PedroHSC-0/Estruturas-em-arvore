@@ -1,0 +1,148 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/app.dir/src/arvores/kdtree.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/arvores",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/kdtree.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/src/arvores/patricia.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/arvores",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/patricia.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/src/arvores/splay.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/arvores",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/splay.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/src/arvores/treap.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/arvores",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/treap.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/src/arvores/trie.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/arvores",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/trie.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/utils/benchmark.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "utils",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/utils/benchmark.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/utils/generator.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-stdlib=libc++"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "utils",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/utils/generator.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build",
+	"dir-cur-src" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore",
+	"dir-top-bld" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build",
+	"dir-top-src" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/build/CMakeFiles/app.dir",
+	"sources" : 
+	{
+		"CMakeFiles/app.dir/src/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/main.cpp"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/app.dir/src/arvores/patricia.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "patricia",
+          "source-path": "/home/pedro/Documentos/GitHub/Estruturas-em-arvore/src/arvores/patricia.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
