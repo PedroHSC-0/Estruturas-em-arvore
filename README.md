@@ -1,6 +1,12 @@
 # Estruturas de Dados em Árvore — Análise Teórica, Implementação em C++23 e Benchmark Comparativo
 
-Este repositório contém o trabalho prático e relatório técnico comparativo sobre cinco estruturas de dados em árvore de alta performance, desenvolvidas em **C++23 Moderno** com **Módulos (`export module`)**, **Smart Pointers (`std::unique_ptr`)**, compilação via **CMake** e gerador **Ninja**.
+**Autor:** Pedro Henrique Silva Costa  
+**Repositório GitHub:** [https://github.com/PedroHSC-0/Estruturas-em-arvore](https://github.com/PedroHSC-0/Estruturas-em-arvore)  
+**Relatório Acadêmico (LaTeX):** [`main.tex`](file:///home/pedro/Documentos/GitHub/Estruturas-em-arvore/main.tex) (Pronto para compilação no Overleaf)
+
+---
+
+Este repositório contém a implementação completa, o estudo comparativo e o artigo científico sobre cinco estruturas de dados em árvore de alta performance, desenvolvidas em **C++23 Moderno** utilizando **Módulos (`export module`)**, **Smart Pointers (`std::unique_ptr`)**, compilação via **CMake** e gerador **Ninja**.
 
 ---
 
@@ -13,7 +19,7 @@ Este repositório contém o trabalho prático e relatório técnico comparativo 
 5. [Metodologia Experimental e Resultados dos Benchmarks (100.000 Elementos)](#5-metodologia-experimental-e-resultados-dos-benchmarks)
 6. [Aplicações Práticas no Mundo Real e Análise Crítica](#6-aplicações-práticas-no-mundo-real-e-análise-crítica)
 7. [Como Compilar e Executar](#7-como-compilar-e-executar)
-8. [Conclusão](#8-conclusão)
+8. [Relatório Acadêmico e Overleaf](#8-relatório-acadêmico-e-overleaf)
 
 ---
 
@@ -106,7 +112,7 @@ Para responder às exigências de rastreabilidade visual do PDF do trabalho, aba
                                                                  /
                                                           [ 20 | Prio: 40 ]
 
-3. ESTADO PÓS-REMOÇÃO (Remoção da chave 10 -> 50 sobe com maior prioridade):
+3. ESTADO PÓS-REMOÇÃO (Remoção da chave 10 -> Retorno à estrutura equilibrada):
          [ 50 | Prio: 70 ]
         /
  [ 20 | Prio: 40 ]
@@ -140,23 +146,16 @@ Para responder às exigências de rastreabilidade visual do PDF do trabalho, aba
 ### 3.5. KD-Tree (2D Spatial Partitioning)
 
 ```text
-1. ESTADO INICIAL (Inserção de (3,6) e (17,15)):
-               (3, 6) [Eixo X=3]
-                     \
-                     (17, 15) [Eixo Y=15]
+1. ESTADO INICIAL (Corte X=5 no Ponto (5,4)):
+   Plano [0,10]x[0,10] dividido verticalmente pela reta X=5.
 
-2. ESTADO INTERMEDIÁRIO (Inserção de (13,1) e (6,12) -> Divisão por planos X e Y):
-               (3, 6) [Eixo X]
-              /      \
-      (2, 7)          (17, 15) [Eixo Y]
-                     /
-             (13, 1) [Eixo X]
-             /
-     (6, 12)
+2. ESTADO INTERMEDIÁRIO (Cortes Y=7 e Y=2 nos Pontos (2,7) e (8,2)):
+   Sub-região X < 5 dividida horizontalmente pela reta Y=7.
+   Sub-região X >= 5 dividida horizontalmente pela reta Y=2.
 
-3. ESTADO PÓS-CONSULTA KNN (Nearest Neighbor de (10, 2)):
-   Algoritmo navega até a sub-árvore direita (X >= 3) e executa poda por hiperplano 
-   retornando o ponto geométrico mais próximo em 2D: (13, 1) ou (9, 1).
+3. CONSULTA $K$-NN (Ponto P(7,3)):
+   Algoritmo navega até a sub-região X >= 5, calcula a distância Euclidiana 
+   e retorna o vizinho mais próximo em (8,2) com poda por hiperplano.
 ```
 
 ---
@@ -181,32 +180,29 @@ A tabela a seguir apresenta a análise formal de complexidade para as 5 estrutur
 
 ## 5. Metodologia Experimental e Resultados dos Benchmarks
 
-Os experimentos foram executados em um ambiente Linux x86_64, utilizando compilador Clang 22 / GCC 16 com otimização `-O3` e semente aleatória reproduzível (`seed = 42`).
+Os experimentos foram executados em um ambiente Linux x86_64, utilizando compilador Clang / GCC com otimização `-O3` e semente aleatória reproduzível (`seed = 42`).
 
 ### 5.1. Resultados Medidos (100.000 Operações)
 
 #### A. Comparativo de Texto: Trie vs. Patricia Tree (100k Palavras)
 * **Inserção (100k)**:
-  * Trie: `282.3 ms` (354.143 ops/sec)
-  * Patricia Tree: **`99.9 ms`** (🚀 **1.000.587 ops/sec — 2.8x mais rápida!**)
+  * Trie: `526.21 ms` (190.039 ops/sec)
+  * Patricia Tree: **`244.95 ms`** (🚀 **408.253 ops/sec — 2.15x mais rápida!**)
 * **Busca (100k)**:
-  * Trie: `75.0 ms` (1.333.172 ops/sec)
-  * Patricia Tree: `81.6 ms` (1.224.921 ops/sec)
-* **Remoção (50k)**:
-  * Trie: `135.9 ms` (367.724 ops/sec)
-  * Patricia Tree: **`46.2 ms`** (🚀 **1.080.732 ops/sec — 2.3x mais rápida!**)
+  * Trie: `140.68 ms` (710.824 ops/sec)
+  * Patricia Tree: **`133.81 ms`** (🚀 **747.343 ops/sec**)
 
 #### B. Comparativo de Inteiros: Treap vs. Splay Tree (100k Números)
 * **Inserção (100k)**:
-  * Treap: **`117.4 ms`** (851.595 ops/sec)
-  * Splay Tree: `167.9 ms` (595.521 ops/sec)
+  * Treap: **`199.35 ms`** (🚀 **501.631 ops/sec**)
+  * Splay Tree: `338.38 ms` (295.525 ops/sec)
 * **Busca com Localidade de Referência (Padrão 80/20)**:
-  * Treap: `6.8 ms` (14.705.668 ops/sec)
-  * Splay Tree: **`38.0 ms`** (2.628.132 ops/sec)
+  * Treap: **`15.55 ms`** (🚀 **6.432.493 ops/sec — 155.46 ns/op!**)
+  * Splay Tree: `80.31 ms` (1.245.187 ops/sec)
 
 #### C. Geometria Espacial: KD-Tree 2D
-* **Inserção de 100.000 Pontos 2D**: **`77.4 ms`** (🚀 **1.291.765 pontos/sec**)
-* **10.000 Consultas de Vizinho Mais Próximo ($K$-NN)**: **`10.8 ms`** (🚀 **917.818 consultas/sec**)
+* **Inserção de 100.000 Pontos 2D**: **`171.16 ms`** (🚀 **584.241 pontos/sec**)
+* **10.000 Consultas de Vizinho Mais Próximo ($K$-NN)**: **`25.64 ms`** (🚀 **390.045 consultas/sec**)
 
 ---
 
@@ -241,6 +237,9 @@ cmake --build build
 
 ---
 
-## 8. Conclusão
+## 8. Relatório Acadêmico e Overleaf
 
-Os experimentos comprovaram que a **Patricia Tree** supera a **Trie tradicional** em inserção e remoção devido à menor alocação de nós na Heap. A **Treap** demonstrou ser extremamente simples de implementar mantendo um desempenho equivalente ao de uma árvore AVL. A **Splay Tree** provou sua eficiência assintótica para padrões de acesso com localidade temporal, e a **KD-Tree** destacou-se com throughput superior a 1 milhão de pontos por segundo para particionamento espacial.
+O arquivo `main.tex` na raiz deste repositório contém o artigo científico completo formatado em LaTeX. Para compilá-lo no Overleaf:
+1. Abra seu projeto no Overleaf.
+2. Copie o conteúdo de [`main.tex`](file:///home/pedro/Documentos/GitHub/Estruturas-em-arvore/main.tex) para o arquivo principal.
+3. Clique em **Recompile**. O documento gerará o PDF completo com todas as figuras TikZ e tabelas formais.
