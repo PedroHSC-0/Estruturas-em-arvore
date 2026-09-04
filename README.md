@@ -182,7 +182,7 @@ A tabela a seguir apresenta a análise formal de complexidade para as 5 estrutur
 
 Os experimentos foram executados em um ambiente Linux x86_64, utilizando compilador Clang / GCC com otimização `-O3` e semente aleatória reproduzível (`seed = 42`).
 
-### 5.1. Resultados Medidos (100.000 Operações)
+### 5.1. Resultados Medidos no Ambiente do Usuário (100.000 Operações)
 
 #### A. Comparativo de Texto: Trie vs. Patricia Tree (100k Palavras)
 * **Inserção (100k)**:
