@@ -2,7 +2,6 @@
 
 **Autor:** Pedro Henrique Silva Costa  
 **Repositório GitHub:** [https://github.com/PedroHSC-0/Estruturas-em-arvore](https://github.com/PedroHSC-0/Estruturas-em-arvore)  
-**Relatório Acadêmico (LaTeX):** [`main.tex`](file:///home/pedro/Documentos/GitHub/Estruturas-em-arvore/main.tex) (Pronto para compilação no Overleaf)
 
 ---
 
